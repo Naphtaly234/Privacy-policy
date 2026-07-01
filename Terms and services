@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms of Service – TechNovaphy AI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #0a0e27;
+            color: #e0e0e0;
+            font-family: 'Inter', -apple-system, system-ui, sans-serif;
+            line-height: 1.7;
+            padding: 2rem 1.5rem;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: #0d1132;
+            border-radius: 24px;
+            padding: 3rem 2.5rem;
+            border: 1px solid #1a1f3a;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            background: linear-gradient(90deg, #00f2ff, #7000ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.25rem;
+        }
+        .subhead {
+            color: #6a6f8a;
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #1a1f3a;
+            padding-bottom: 1rem;
+        }
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #00f2ff;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #8b83ff;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        h4 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #b0b0d0;
+            margin-top: 1.2rem;
+            margin-bottom: 0.3rem;
+        }
+        p {
+            margin-bottom: 0.75rem;
+            color: #d0d0e0;
+        }
+        ul,
+        ol {
+            margin: 0.5rem 0 1rem 1.5rem;
+            color: #d0d0e0;
+        }
+        li {
+            margin-bottom: 0.3rem;
+        }
+        .highlight-box {
+            background: rgba(0, 242, 255, 0.05);
+            border-left: 3px solid #00f2ff;
+            padding: 0.8rem 1.2rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .highlight-box.warning {
+            border-left-color: #ffa500;
+            background: rgba(255, 165, 0, 0.05);
+        }
+        .highlight-box.danger {
+            border-left-color: #f87171;
+            background: rgba(248, 113, 113, 0.05);
+        }
+        .highlight-box.success {
+            border-left-color: #4ade80;
+            background: rgba(74, 222, 128, 0.05);
+        }
+        .tier-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .tier-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid #1a1f3a;
+            border-radius: 12px;
+            padding: 1rem;
+            text-align: center;
+        }
+        .tier-card .name {
+            font-weight: 700;
+            font-size: 1rem;
+            color: #00f2ff;
+        }
+        .tier-card .price {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0.3rem 0;
+        }
+        .tier-card .features {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+        .tier-card.recommended {
+            border-color: #00f2ff;
+            background: rgba(0, 242, 255, 0.04);
+        }
+        .tier-card .tag {
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            background: #00f2ff;
+            color: #0a0e27;
+            padding: 0.1rem 0.5rem;
+            border-radius: 12px;
+            display: inline-block;
+            margin-bottom: 0.3rem;
+            font-weight: 700;
+        }
+        .footer-note {
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #1a1f3a;
+            font-size: 0.85rem;
+            color: #6a6f8a;
+            text-align: center;
+        }
+        .footer-note a {
+            color: #00f2ff;
+            text-decoration: none;
+        }
+        .footer-note a:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #00f2ff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 640px) {
+            .container {
+                padding: 1.5rem 1rem;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+            .tier-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 420px) {
+            .tier-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>TechNovaphy AI</h1>
+        <div class="subhead">Terms of Service</div>
+
+        <p><strong>Effective Date:</strong> July 1, 2026 &bull; <strong>Last Updated:</strong> July 1, 2026</p>
+
+        <h2>1. Agreement to Terms</h2>
+        <p>By accessing and using TechNovaphy AI (the "Service"), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.</p>
+        <p><strong>These Terms apply to:</strong></p>
+        <ul>
+            <li>Website (https://dashing-marigold-aab3e2.netlify.app/)</li>
+            <li>Mobile applications</li>
+            <li>API access</li>
+            <li>All related services</li>
+        </ul>
+
+        <h2>2. Use License</h2>
+        <p>TechNovaphy Solutions grants you a limited, non-exclusive, revocable license to:</p>
+        <ul>
+            <li>Access the Service</li>
+            <li>Create an account</li>
+            <li>Use features according to your tier</li>
+            <li>Store and retrieve your data</li>
+            <li>Download reports (if applicable)</li>
+        </ul>
+        <div class="highlight-box danger">
+            <strong>You must NOT:</strong>
+            <ul>
+                <li>❌ Reproduce, duplicate, or copy the Service</li>
+                <li>❌ Reverse-engineer or decompile our code</li>
+                <li>❌ Use Service for commercial purposes (except paying customers)</li>
+                <li>❌ Harass, abuse, or harm others</li>
+                <li>❌ Spam or flood the system</li>
+                <li>❌ Attempt to gain unauthorized access</li>
+                <li>❌ Use automated bots or scripts (except official API)</li>
+                <li>❌ Resell or redistribute access</li>
+                <li>❌ Use Service while under 18 years old</li>
+            </ul>
+        </div>
+
+        <h2>3. Account Registration</h2>
+        <h3>3.1 Eligibility</h3>
+        <ul>
+            <li>Must be <strong>18 years or older</strong></li>
+            <li>Must provide accurate information</li>
+            <li>Must maintain account security</li>
+            <li>You are responsible for all activity under your account</li>
+        </ul>
+
+        <h3>3.2 Account Responsibilities</h3>
+        <div class="highlight-box success">
+            <strong>You agree to:</strong>
+            <ul>
+                <li>✅ Provide accurate, complete information</li>
+                <li>✅ Keep passwords confidential and secure</li>
+                <li>✅ Immediately notify us of unauthorized access</li>
+                <li>✅ Accept responsibility for all account activity</li>
+                <li>✅ Not share account credentials with others</li>
+            </ul>
+        </div>
+        <div class="highlight-box danger">
+            <strong>We are NOT liable for:</strong>
+            <ul>
+                <li>❌ Unauthorized access due to your negligence</li>
+                <li>❌ Loss or damage from sharing passwords</li>
+                <li>❌ Third-party access you permit</li>
+            </ul>
+        </div>
+
+        <h3>3.3 Account Termination</h3>
+        <p><strong>We may terminate your account if you:</strong></p>
+        <ul>
+            <li>Violate these Terms</li>
+            <li>Engage in harmful activity</li>
+            <li>Use Service illegally</li>
+            <li>Harass other users</li>
+            <li>Don't pay for premium services</li>
+            <li>Request deletion</li>
+        </ul>
+        <p>You can delete your account anytime. Upon deletion:</p>
+        <ul>
+            <li>All personal data removed within 30 days</li>
+            <li>Conversation history permanently deleted</li>
+            <li>Payment records retained for 7 years (legal requirement)</li>
+        </ul>
+
+        <h2>4. Tier System &amp; Usage Limits</h2>
+        <div class="tier-grid">
+            <div class="tier-card">
+                <div class="name">Free</div>
+                <div class="price">$0</div>
+                <div class="features">200 messages / month<br>20 msgs / 2.5h<br>Limited features</div>
+            </div>
+            <div class="tier-card">
+                <div class="name">Starter</div>
+                <div class="price">$13 <small style="font-size:0.6rem;opacity:0.6;">/mo</small></div>
+                <div class="features">550 messages / month<br>Unlimited hourly<br>Priority support</div>
+            </div>
+            <div class="tier-card recommended">
+                <div class="tag">⭐ Best Value</div>
+                <div class="name">Pro</div>
+                <div class="price">$27 <small style="font-size:0.6rem;opacity:0.6;">/mo</small></div>
+                <div class="features">2,500 messages / month<br>Unlimited hourly<br>1-hour support</div>
+            </div>
+            <div class="tier-card">
+                <div class="name">Enterprise</div>
+                <div class="price">$116 <small style="font-size:0.6rem;opacity:0.6;">/mo</small></div>
+                <div class="features">Unlimited messages<br>24/7 support<br>Team collaboration</div>
+            </div>
+        </div>
+        <p><strong>Note:</strong> Prices shown in USD for reference. Actual charges in your chosen currency (KES, USD, EUR, GBP, NGN, GHS, ZAR) will be converted based on live exchange rates.</p>
+        <ul>
+            <li>Limits reset on your billing date</li>
+            <li>Exceeding limits = account suspension until next month</li>
+            <li>Upgrade anytime to higher tier</li>
+            <li>Downgrade effective next billing cycle</li>
+            <li>Monthly charges are non-refundable</li>
+        </ul>
+
+        <h2>5. Payment &amp; Billing</h2>
+        <h3>5.1 Payment Methods</h3>
+        <p>Accepted currencies:</p>
+        <ul>
+            <li><strong>KES</strong> (Kenyan Shilling) – Paystack, M-Pesa</li>
+            <li><strong>USD</strong> (US Dollar) – Paystack, Credit Card</li>
+            <li><strong>EUR</strong> (Euro) – Paystack</li>
+            <li><strong>GBP</strong> (British Pound) – Paystack</li>
+            <li><strong>NGN</strong> (Nigerian Naira) – Paystack</li>
+            <li><strong>GHS</strong> (Ghanaian Cedi) – Paystack</li>
+            <li><strong>ZAR</strong> (South African Rand) – Paystack</li>
+        </ul>
+        <h3>5.2 Billing Cycle</h3>
+        <ul>
+            <li><strong>Monthly:</strong> Charged on same day each month</li>
+            <li><strong>Automatic Renewal:</strong> Your subscription auto-renews unless cancelled</li>
+            <li><strong>Invoice:</strong> Digital receipt sent to your email</li>
+            <li><strong>Failed Payment:</strong> Account suspended after 7 days unpaid</li>
+        </ul>
+        <h3>5.3 Refund Policy</h3>
+        <div class="highlight-box warning">
+            <strong>Refunds are NOT available because:</strong>
+            <ul>
+                <li>Service is continuously available</li>
+                <li>You can cancel anytime and stop charges</li>
+                <li>No refunds for partial months</li>
+                <li>Exception: Accidental duplicate charges (refunded within 30 days)</li>
+            </ul>
+        </div>
+
+        <h2>6. Content &amp; Intellectual Property</h2>
+        <h3>6.1 Your Content</h3>
+        <div class="highlight-box success">
+            <strong>You retain ownership of:</strong>
+            <ul>
+                <li>Messages you send</li>
+                <li>Files you upload</li>
+                <li>Data you store</li>
+            </ul>
+        </div>
+        <div class="highlight-box danger">
+            <strong>We DO NOT:</strong>
+            <ul>
+                <li>❌ Train AI models on your data</li>
+                <li>❌ Share content with others</li>
+                <li>❌ Use for marketing</li>
+                <li>❌ Claim ownership</li>
+            </ul>
+        </div>
+        <h3>6.2 AI-Generated Content</h3>
+        <ul>
+            <li>Are NOT copyrighted</li>
+            <li>You can use freely</li>
+            <li>You can publish commercially</li>
+            <li>You can modify/redistribute</li>
+            <li>No attribution required</li>
+        </ul>
+        <h3>6.3 Service Content</h3>
+        <p><strong>TechNovaphy owns:</strong></p>
+        <ul>
+            <li>Website design and layout</li>
+            <li>AI models and algorithms</li>
+            <li>Logo and branding</li>
+            <li>Documentation</li>
+            <li>All code (except uploaded files)</li>
+        </ul>
+
+        <h2>7. User Conduct</h2>
+        <h3>7.1 Prohibited Behavior</h3>
+        <div class="highlight-box danger">
+            <strong>Illegal Activity:</strong>
+            <ul>
+                <li>❌ Use for illegal purposes</li>
+                <li>❌ Violate any laws</li>
+                <li>❌ Commit fraud or hacking</li>
+                <li>❌ Distribute malware</li>
+            </ul>
+            <strong>Harmful Content:</strong>
+            <ul>
+                <li>❌ Upload viruses or malicious code</li>
+                <li>❌ Post hate speech or discrimination</li>
+                <li>❌ Share sexually explicit content</li>
+                <li>❌ Threaten or harass others</li>
+                <li>❌ Impersonate others</li>
+            </ul>
+            <strong>System Abuse:</strong>
+            <ul>
+                <li>❌ Spam, phishing, or scams</li>
+                <li>❌ DDoS attacks</li>
+                <li>❌ Automated scraping</li>
+                <li>❌ Bot abuse</li>
+                <li>❌ Rate limit evasion</li>
+            </ul>
+        </div>
+
+        <h2>8. AI Responses &amp; Disclaimers</h2>
+        <div class="highlight-box warning">
+            <strong>TechNovaphy AI:</strong>
+            <ul>
+                <li>Is NOT a lawyer, doctor, or professional</li>
+                <li>Should NOT be used for medical advice</li>
+                <li>Should NOT be used for legal advice</li>
+                <li>May contain inaccuracies or hallucinations</li>
+                <li>Should be verified before critical decisions</li>
+            </ul>
+        </div>
+        <div class="highlight-box danger">
+            <strong>DO NOT use for:</strong>
+            <ul>
+                <li>Medical self-diagnosis</li>
+                <li>Legal document creation</li>
+                <li>Financial investment advice</li>
+                <li>Critical business decisions</li>
+                <li>Anything requiring professional expertise</li>
+            </ul>
+        </div>
+
+        <h2>9. Warranty Disclaimer</h2>
+        <div class="highlight-box warning">
+            <strong>SERVICE PROVIDED "AS-IS"</strong>
+            <p>We provide the Service on an "as-is" and "as-available" basis without warranties of any kind, including:</p>
+            <ul>
+                <li>❌ Merchantability</li>
+                <li>❌ Fitness for a particular purpose</li>
+                <li>❌ Non-infringement</li>
+                <li>❌ Availability</li>
+                <li>❌ Accuracy</li>
+                <li>❌ Security</li>
+            </ul>
+        </div>
+
+        <h2>10. Limitation of Liability</h2>
+        <div class="highlight-box danger">
+            <strong>WE ARE NOT LIABLE FOR:</strong>
+            <ul>
+                <li>❌ Lost profits or revenue</li>
+                <li>❌ Lost data or files</li>
+                <li>❌ Indirect damages</li>
+                <li>❌ Consequential damages</li>
+                <li>❌ Special damages</li>
+                <li>❌ Punitive damages</li>
+            </ul>
+            <p><strong>Maximum liability:</strong> Amount you paid in last 3 months OR $100, whichever is LESS.</p>
+        </div>
+
+        <h2>11. Dispute Resolution</h2>
+        <h3>11.1 Informal Resolution</h3>
+        <p>Before legal action:</p>
+        <ol>
+            <li>Email dispute to: technovaphysolutions@gmail.com</li>
+            <li>We'll respond within 14 days</li>
+            <li>Attempt good-faith resolution</li>
+            <li>Discuss mutually acceptable terms</li>
+        </ol>
+        <h3>11.2 Arbitration</h3>
+        <p>If not resolved within 30 days:</p>
+        <ul>
+            <li>Disputes resolved by <strong>arbitration</strong> (not court)</li>
+            <li>Single arbitrator</li>
+            <li>Arbitration conducted in Nairobi, Kenya</li>
+            <li>Costs split equally</li>
+            <li>Decision is binding</li>
+        </ul>
+        <h3>11.3 Governing Law</h3>
+        <p>These Terms governed by <strong>laws of Kenya</strong> without regard to conflicts of law.</p>
+
+        <h2>12. Contact Us</h2>
+        <div class="highlight-box">
+            📧 <strong>Email:</strong> technovaphysolutions@gmail.com<br>
+            📞 <strong>Phone:</strong> +254 799 269 573<br>
+            🏢 <strong>Address:</strong> Nairobi, Kenya<br>
+            🌐 <strong>Website:</strong> https://technovaphy.co.ke<br>
+            <strong>Response time:</strong> Within 5 business days
+        </div>
+
+        <h2>13. Changes to Terms</h2>
+        <p>We may update Terms anytime. <strong>Material changes</strong> require 30-day notice. Continued use = acceptance. If you disagree, delete your account.</p>
+
+        <div class="footer-note">
+            <strong>Last Updated:</strong> July 1, 2026 &bull; <strong>Effective:</strong> Immediately<br><br>
+            By using TechNovaphy AI, you accept these Terms of Service.<br>
+            If you do not agree, do not use the Service.
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center; border-top: 1px solid #1a1f3a; padding-top: 1.5rem;">
+            <a href="https://dashing-marigold-aab3e2.netlify.app/" class="back-link">← Back to TechNovaphy AI</a>
+        </div>
+
+        <div class="footer-note" style="margin-top: 1rem; border-top: none; padding-top: 0;">
+            © 2026 TechNovaphy Solutions &bull; Built with ❤️ in Nairobi
+        </div>
+    </div>
+</body>
+</html>

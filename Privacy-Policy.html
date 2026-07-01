@@ -1,379 +1,759 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - TechNovaphy AI</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy & Terms – TechNovaphy AI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
-            font-family: 'Inter', sans-serif;
             background: #0a0e27;
             color: #e0e0e0;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
+            font-family: 'Inter', -apple-system, system-ui, sans-serif;
+            line-height: 1.7;
+            padding: 2rem 1.5rem;
         }
-        h1 { color: #00F2FF; }
-        h2 { color: #7000FF; }
-        a { color: #00F2FF; }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: #0d1132;
+            border-radius: 24px;
+            padding: 3rem 2.5rem;
+            border: 1px solid #1a1f3a;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+        }
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            background: linear-gradient(90deg, #00f2ff, #7000ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.25rem;
+        }
+        .subhead {
+            color: #6a6f8a;
+            font-size: 0.95rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #1a1f3a;
+            padding-bottom: 1rem;
+        }
+        .policy-section {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 2px solid #1a1f3a;
+        }
+        .policy-section:first-of-type {
+            margin-top: 0;
+            padding-top: 0;
+            border-top: none;
+        }
+        .policy-section h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #00f2ff;
+            margin-bottom: 0.5rem;
+        }
+        .policy-section h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #8b83ff;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .policy-section p {
+            margin-bottom: 0.75rem;
+            color: #d0d0e0;
+        }
+        .policy-section ul,
+        .policy-section ol {
+            margin: 0.5rem 0 1rem 1.5rem;
+            color: #d0d0e0;
+        }
+        .policy-section li {
+            margin-bottom: 0.3rem;
+        }
+        .highlight-box {
+            background: rgba(0, 242, 255, 0.05);
+            border-left: 3px solid #00f2ff;
+            padding: 0.8rem 1.2rem;
+            margin: 1rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .highlight-box.warning {
+            border-left-color: #ffa500;
+            background: rgba(255, 165, 0, 0.05);
+        }
+        .highlight-box.danger {
+            border-left-color: #f87171;
+            background: rgba(248, 113, 113, 0.05);
+        }
+        .highlight-box.success {
+            border-left-color: #4ade80;
+            background: rgba(74, 222, 128, 0.05);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.9rem;
+        }
+        th,
+        td {
+            padding: 0.6rem 0.8rem;
+            border: 1px solid #1a1f3a;
+            text-align: left;
+        }
+        th {
+            background: rgba(0, 242, 255, 0.08);
+            color: #00f2ff;
+            font-weight: 600;
+        }
+        .tier-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        .tier-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid #1a1f3a;
+            border-radius: 12px;
+            padding: 1rem;
+            text-align: center;
+        }
+        .tier-card .name {
+            font-weight: 700;
+            font-size: 1rem;
+            color: #00f2ff;
+        }
+        .tier-card .price {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0.3rem 0;
+        }
+        .tier-card .features {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+        .tier-card.recommended {
+            border-color: #00f2ff;
+            background: rgba(0, 242, 255, 0.04);
+        }
+        .tier-card .tag {
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            background: #00f2ff;
+            color: #0a0e27;
+            padding: 0.1rem 0.5rem;
+            border-radius: 12px;
+            display: inline-block;
+            margin-bottom: 0.3rem;
+            font-weight: 700;
+        }
+        .footer-note {
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #1a1f3a;
+            font-size: 0.85rem;
+            color: #6a6f8a;
+            text-align: center;
+        }
+        .footer-note a {
+            color: #00f2ff;
+            text-decoration: none;
+        }
+        .footer-note a:hover {
+            text-decoration: underline;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #00f2ff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 640px) {
+            .container {
+                padding: 1.5rem 1rem;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+            table {
+                font-size: 0.75rem;
+            }
+            th,
+            td {
+                padding: 0.4rem 0.5rem;
+            }
+            .tier-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 420px) {
+            .tier-grid {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <p><strong>Effective Date:</strong> July 1, 2026</p>
-    
-    # PRIVACY POLICY
-## TechNovaphy AI
-
-**Effective Date:** July 1, 2026  
-**Last Updated:** July 1, 2026
-
----
-
-## 1. INTRODUCTION
-
-TechNovaphy Solutions ("**Company**, **we**, **us**, or **our**") operates the TechNovaphy AI platform (the "**Service**"). This Privacy Policy explains how we collect, use, disclose, and otherwise handle your information when you use our website, mobile application, and related services.
-
-We are committed to protecting your privacy and ensuring you have a positive experience on our Service. Please read this Privacy Policy carefully. If you do not agree with our policies and practices, please do not use our Service.
-
----
-
-## 2. INFORMATION WE COLLECT
-
-### 2.1 Information You Provide Directly
-
-**Account Registration:**
-- Email address
-- Password (encrypted)
-- Full name (optional)
-- Phone number (optional)
-- Age confirmation (18+ verification)
-- Payment information (processed securely)
-
-**Through Your Use:**
-- Chat messages and conversation history
-- Files you upload (PDFs, images, documents)
-- User preferences and settings
-- Feedback and support inquiries
-- Payment transaction details
-
-### 2.2 Information Collected Automatically
-
-**Device Information:**
-- Device type and operating system
-- Browser type and version
-- IP address
-- Device ID
-- Mobile network information
-
-**Usage Information:**
-- Pages/features accessed
-- Time spent on platform
-- Clicks and interactions
-- Error logs
-- API usage patterns
-- Message frequency and timing
-
-**Location Information:**
-- General location based on IP address (country, region)
-- Not precise physical location
-
-### 2.3 Information from Third Parties
-
-**Payment Processors:**
-- Paystack provides transaction confirmation
-- Payment status and history
-
-**Analytics Services:**
-- Google Analytics (anonymized user behavior)
-
----
-
-## 3. HOW WE USE YOUR INFORMATION
-
-We use collected information for:
-
-### 3.1 Core Service Operations
-- Creating and maintaining your account
-- Processing payments and billing
-- Delivering AI chat responses
-- Storing conversation history
-- Managing file uploads and processing
-- Tracking usage against tier limits
-- Providing customer support
-
-### 3.2 Service Improvement
-- Analyzing usage patterns
-- Improving AI model accuracy
-- Testing new features
-- Optimizing user experience
-- Debugging and fixing errors
-- Security monitoring and fraud prevention
-
-### 3.3 Communication
-- Sending account notifications
-- Usage alerts and quota reminders
-- Upgrade reminders
-- Important service updates
-- Support responses (only if you contact us)
-
-### 3.4 Legal Compliance
-- Complying with laws and regulations
-- Enforcing our Terms of Service
-- Protecting user rights and safety
-- Responding to legal requests
-
-### 3.5 What We DON'T Use Your Data For
-- ❌ Marketing without explicit consent
-- ❌ Selling to third parties
-- ❌ Training AI models on your private data
-- ❌ Sharing with competitors
-- ❌ Behavior tracking for ads
-
----
-
-## 4. DATA SHARING AND DISCLOSURE
-
-### 4.1 We Do NOT Share Your Data With:
-- ❌ Third-party advertisers
-- ❌ Data brokers
-- ❌ Marketing companies
-- ❌ Competitors
-- ❌ Your payment details are never shared
-
-### 4.2 We Share Your Data With (Only When Necessary):
-
-**Essential Service Providers:**
-- **Supabase** (Data storage) - only data you authorize
-- **Groq API** (AI processing) - your message content only
-- **Paystack** (Payments) - payment information only
-- **Google Analytics** (anonymized usage only)
-
-**Legal Obligations:**
-- Law enforcement if legally required
-- Court orders or government requests
-- To protect legal rights and safety
-- Fraud investigation and prevention
-
-### 4.3 Data Processing Agreement
-All service providers sign Data Processing Agreements (DPAs) ensuring they:
-- Protect your data with encryption
-- Don't use data for their own purposes
-- Delete data upon service termination
-- Comply with GDPR and local laws
-
----
-
-## 5. DATA RETENTION
-
-| Data Type | Retention Period | Reason |
-|-----------|------------------|--------|
-| Account information | Lifetime (until deletion) | Maintain your account |
-| Conversation history | Until user deletes | Provide service continuity |
-| Payment records | 7 years | Tax and legal compliance |
-| Support tickets | 2 years | Support and legal purposes |
-| Error logs | 30 days | Debugging and security |
-| IP addresses | 90 days | Security and fraud prevention |
-| Analytics data | 26 months | Service improvement |
-
-**You can delete your account and data anytime.** Upon deletion:
-- All personal data deleted within 30 days
-- Payment records retained only for tax purposes
-- Conversation history deleted permanently
-- AI models NOT trained on your data
-
----
-
-## 6. DATA SECURITY
-
-### 6.1 Security Measures
-- **HTTPS/TLS encryption** for all data in transit
-- **AES-256 encryption** for data at rest
-- **JWT tokens** for authentication
-- **Password hashing** (bcrypt) - we never store passwords
-- **Regular security audits** and penetration testing
-- **No plaintext storage** of sensitive data
-- **Rate limiting** to prevent brute force attacks
-- **CORS protection** against unauthorized access
-
-### 6.2 What We Can't Guarantee
-- No security is 100% guaranteed
-- We implement industry best practices
-- If breach occurs, we notify you within 48 hours
-- We recommend unique, strong passwords
-- Enable 2FA when available
-
----
-
-## 7. INTERNATIONAL DATA TRANSFERS
-
-TechNovaphy AI operates from **Kenya** and serves users **worldwide**. Your data is stored on:
-- **Supabase** (servers in USA/Ireland for GDPR compliance)
-- **AWS CloudFlare** (global CDN)
-
-**For EU Users:** We comply with GDPR Article 49 (adequacy decisions). Your data is processed lawfully.
-
-**For California Users:** We comply with CCPA requirements.
-
-**For Kenya & Africa Users:** We comply with Kenya Data Protection Act 2019.
-
----
-
-## 8. YOUR RIGHTS
-
-### 8.1 Access & Portability
-- **Right to know:** What data we have about you
-- **Right to download:** Export your data in standard format
-- **Right to transfer:** Move your data to another service
-
-### 8.2 Correction & Deletion
-- **Right to correct:** Update inaccurate information
-- **Right to delete:** Erase your account and data
-- **Right to object:** Opt-out of certain processing
-
-### 8.3 How to Exercise Rights
-
-**Email:** privacy@technovaphy.co.ke  
-**Response time:** Within 14 days
-
-**Provide:**
-1. Your email address
-2. Type of request (access/delete/export)
-3. Valid ID proof (for verification)
-
----
-
-## 9. CHILDREN'S PRIVACY
-
-**TechNovaphy AI is NOT intended for children under 18.**
-
-- Age confirmation required (18+ only)
-- We don't knowingly collect data from minors
-- If we discover child data, we delete immediately
-- Parents/guardians can request deletion
-
-**If you're under 18:** Do NOT use this service.
-
----
-
-## 10. THIRD-PARTY SERVICES
-
-### 10.1 Links to Other Websites
-Our Service contains links to third-party websites. We're NOT responsible for their privacy practices. Review their privacy policies before visiting.
-
-### 10.2 Third-Party Cookies
-- Google Analytics uses cookies (anonymized)
-- Paystack uses payment processing cookies
-- You can disable cookies in browser settings
-- See our Cookie Policy for details
-
-### 10.3 API Usage
-If you integrate TechNovaphy AI with other services, data shared with those services is their responsibility.
-
----
-
-## 11. CALIFORNIA PRIVACY RIGHTS (CCPA)
-
-If you're a California resident, you have rights under CCPA:
-
-**Right to Know:** What personal info we collect, use, share
-**Right to Delete:** Request deletion of your data
-**Right to Opt-Out:** Prevent sale of data (we don't sell it anyway)
-**Right to Non-Discrimination:** No penalties for exercising rights
-
-**Submit requests to:** privacy@technovaphy.co.ke
-
----
-
-## 12. EUROPEAN PRIVACY RIGHTS (GDPR)
-
-If you're in the EU, you have rights under GDPR:
-
-**Legal basis for processing:**
-- Your consent (account creation)
-- Contract performance (service delivery)
-- Legal obligations (tax/compliance)
-- Legitimate interests (fraud prevention)
-
-**Data Protection Officer:** privacy@technovaphy.co.ke
-
-**EU Residents can:**
-- Request data access
-- Request rectification
-- Request erasure ("right to be forgotten")
-- Restrict processing
-- Object to processing
-- Lodge complaint with supervisory authority
-
----
-
-## 13. COOKIES
-
-**What are cookies?**
-Small files stored on your device to remember preferences and usage patterns.
-
-**Types we use:**
-- **Essential:** Required for login and payments
-- **Functional:** Remember user preferences
-- **Analytics:** Track anonymized usage (Google Analytics)
-- **Advertising:** NOT used (we don't track for ads)
-
-**Cookie duration:**
-- Session cookies: Deleted when you close browser
-- Persistent cookies: Last up to 1 year
-- You can delete cookies anytime in settings
-
----
-
-## 14. CONTACT US
-
-**Privacy Questions:**
-📧 Email: privacy@technovaphy.co.ke  
-🏢 Address: Nairobi, Kenya  
-📞 Phone: +254 799 269 573  
-
-**Data Subject Requests:**
-Same email as above - we respond within 14 days
-
-**Complaints:**
-If you're unsatisfied with our response, you can lodge complaints with:
-- **Kenya:** Office of the Data Protection Commissioner
-- **EU:** Your local Data Protection Authority
-- **USA:** California Attorney General (for CCPA issues)
-
----
-
-## 15. CHANGES TO PRIVACY POLICY
-
-We may update this Privacy Policy anytime. **Material changes** will be:
-- Posted on our website
-- Announced via email
-- Effective 30 days after notice
-
-**Continued use = acceptance of changes**
-
-If you disagree, please delete your account.
-
----
-
-## 16. LEGAL JURISDICTION
-
-This Privacy Policy is governed by the **laws of Kenya**. 
-
-For international users:
-- **EU/UK:** GDPR and local laws apply
-- **USA:** State laws and federal laws apply
-- **Other:** Local data protection laws apply
-
----
-
-**Last Updated:** July 1, 2026  
-**Next Review:** January 1, 2027
-
----
-
-**By using TechNovaphy AI, you consent to this Privacy Policy.**
-    
-    <p><a href="/">← Back to Home</a></p>
+    <div class="container">
+        <h1>TechNovaphy AI</h1>
+        <div class="subhead">Privacy Policy &amp; Terms of Service</div>
+
+        <!-- ============================================================ -->
+        <!-- PRIVACY POLICY -->
+        <!-- ============================================================ -->
+        <div class="policy-section" id="privacy">
+            <h2>Privacy Policy</h2>
+            <p><strong>Effective Date:</strong> July 1, 2026 &bull; <strong>Last Updated:</strong> July 1, 2026</p>
+
+            <h3>1. Introduction</h3>
+            <p>Welcome to TechNovaphy AI! We're TechNovaphy Solutions ("the Company", "we", "us", or "our"). This policy explains what information we collect, why we collect it, and how we handle it. We want you to feel confident that your data is safe and that we're not doing anything shady with it.</p>
+            <p>By using our Service, you agree to this policy. If you're not on board, you're free to leave – but we'd really like you to stay.</p>
+
+            <h3>2. What Information We Collect</h3>
+            <h4>2.1 Stuff You Give Us Directly</h4>
+            <p><strong>When you create an account:</strong></p>
+            <ul>
+                <li>Email address (we need it to log you in and send updates)</li>
+                <li>Password (we never store it in plain text – we hash it with bcrypt)</li>
+                <li>Full name (optional, but nice to have)</li>
+                <li>Phone number (optional, handy for support)</li>
+                <li>Confirmation that you're 18 or older</li>
+                <li>Payment details (processed through Paystack – we never see your full card number)</li>
+            </ul>
+            <p><strong>When you use the Service:</strong></p>
+            <ul>
+                <li>Every chat message and conversation you have with the AI</li>
+                <li>Files you upload (PDFs, images, documents – we only process them for your request)</li>
+                <li>Your preferences, settings, and feedback</li>
+                <li>Support tickets and queries</li>
+            </ul>
+
+            <h4>2.2 Stuff We Collect Automatically</h4>
+            <ul>
+                <li><strong>Device &amp; browser info:</strong> Device type, operating system, browser version, and IP address.</li>
+                <li><strong>Usage patterns:</strong> Pages visited, time spent, clicks, errors, and AI usage frequency.</li>
+                <li><strong>Location (rough):</strong> Country and region from your IP – we don't know your exact address.</li>
+            </ul>
+
+            <h4>2.3 Information from Third Parties</h4>
+            <ul>
+                <li><strong>Paystack</strong> tells us whether your transaction succeeded or not.</li>
+                <li><strong>Google Analytics</strong> gives us anonymised stats about usage – no personal details.</li>
+            </ul>
+
+            <h3>3. How We Use Your Information</h3>
+            <h4>3.1 To Make the Service Work</h4>
+            <ul>
+                <li>Creating and managing your account</li>
+                <li>Processing payments (only when you buy a plan)</li>
+                <li>Delivering AI responses to your chats</li>
+                <li>Keeping your conversation history</li>
+                <li>Handling file uploads for the AI</li>
+                <li>Tracking your message usage against your plan limit</li>
+                <li>Responding to your support requests</li>
+            </ul>
+
+            <h4>3.2 To Improve the Service</h4>
+            <ul>
+                <li>Analysing how people use the app</li>
+                <li>Tweaking the AI model for better answers</li>
+                <li>Testing new features</li>
+                <li>Fixing bugs and performance issues</li>
+                <li>Monitoring for security threats and fraud</li>
+            </ul>
+
+            <h4>3.3 To Communicate With You</h4>
+            <ul>
+                <li>Account notifications (e.g., "you're about to hit your limit")</li>
+                <li>Plan upgrade reminders</li>
+                <li>Important service changes</li>
+                <li>Replies to your support emails – only if you reach out first</li>
+            </ul>
+
+            <h4>3.4 What We Absolutely Do NOT Do With Your Data</h4>
+            <div class="highlight-box danger">
+                ❌ We don't sell your data to advertisers.<br>
+                ❌ We don't share it with data brokers or marketing companies.<br>
+                ❌ We never use your private conversations to train public AI models.<br>
+                ❌ We don't track you across the web for ads.
+            </div>
+
+            <h3>4. Sharing Your Data</h3>
+            <h4>4.1 We NEVER Share With These People:</h4>
+            <div class="highlight-box danger">
+                ❌ Advertisers or ad networks<br>
+                ❌ Data brokers<br>
+                ❌ Any third party that wants to use your data for their own marketing
+            </div>
+
+            <h4>4.2 We Do Share With (But Only What's Necessary):</h4>
+            <p><strong>Essential third-party services we rely on:</strong></p>
+            <ul>
+                <li><strong>Supabase</strong> – our database provider, stores your account and conversation data on our instructions.</li>
+                <li><strong>Groq API</strong> – our AI engine, processes your messages to generate responses (they don't store them).</li>
+                <li><strong>Paystack</strong> – handles your card details for us; we never see them.</li>
+                <li><strong>Google Analytics</strong> – anonymised usage stats, no personal info.</li>
+            </ul>
+            <p><strong>Legal situations:</strong></p>
+            <ul>
+                <li>If a court or government agency demands data and we're legally obliged to comply.</li>
+                <li>If we need to investigate or prevent fraud, security threats, or harm.</li>
+            </ul>
+            <div class="highlight-box">
+                <strong>Our partners are under contract:</strong> They must keep your data encrypted, only use it for the specific tasks we hire them for, and delete it when we stop working together.
+            </div>
+
+            <h3>5. How Long We Keep Your Data</h3>
+            <table>
+                <thead>
+                    <tr><th>Data Type</th><th>How Long We Keep It</th><th>Why</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Account info (email, name, etc.)</td><td>Until you delete your account</td><td>We need it to keep your account active</td></tr>
+                    <tr><td>Conversation history</td><td>Until you delete it (or delete your account)</td><td>So you can continue chats seamlessly</td></tr>
+                    <tr><td>Payment records</td><td>7 years</td><td>Legal requirement (tax and audit)</td></tr>
+                    <tr><td>Support tickets</td><td>2 years</td><td>So we can refer back to past issues</td></tr>
+                    <tr><td>Error logs</td><td>30 days</td><td>Debugging and security review</td></tr>
+                    <tr><td>IP addresses</td><td>90 days</td><td>Security monitoring</td></tr>
+                    <tr><td>Google Analytics data</td><td>26 months</td><td>For long-term trend analysis</td></tr>
+                </tbody>
+            </table>
+            <p><strong>You can request deletion anytime</strong> – we'll wipe your personal data within 30 days (except payment records we're legally obliged to keep). Your conversations and files will be gone for good.</p>
+
+            <h3>6. How We Protect Your Data</h3>
+            <ul>
+                <li><strong>Encryption in transit:</strong> HTTPS/TLS for all data sent between your browser and our servers.</li>
+                <li><strong>Encryption at rest:</strong> AES-256 encryption in our database.</li>
+                <li><strong>Authentication:</strong> JWT tokens for secure logins.</li>
+                <li><strong>Passwords:</strong> bcrypt hashing – we never store your actual password.</li>
+                <li><strong>Regular security checks:</strong> Vulnerability tests and penetration testing.</li>
+                <li><strong>No plaintext secrets:</strong> We never store sensitive data in plain text.</li>
+                <li><strong>Rate limiting:</strong> To prevent brute-force attacks on login.</li>
+                <li><strong>CORS:</strong> We restrict which domains can access our API.</li>
+            </ul>
+            <div class="highlight-box warning">
+                <strong>Remember:</strong> No system is 100% secure. If we ever have a breach, we'll notify you within 48 hours and take immediate action. We recommend using a strong, unique password.
+            </div>
+
+            <h3>7. International Data Transfers</h3>
+            <p>We're a Kenyan company, but we serve users all over the world. Your data is stored on:</p>
+            <ul>
+                <li><strong>Supabase</strong> – servers in the USA and Ireland (for GDPR compliance)</li>
+                <li><strong>CloudFlare</strong> – global CDN for fast delivery</li>
+            </ul>
+            <p><strong>For EU users:</strong> We comply with GDPR rules for transferring data outside the EU.<br>
+            <strong>For California users:</strong> We comply with CCPA requirements.<br>
+            <strong>For Kenya and other African users:</strong> We comply with the Kenya Data Protection Act 2019.</p>
+
+            <h3>8. Your Rights</h3>
+            <h4>8.1 Access &amp; Portability</h4>
+            <ul>
+                <li>Ask us what data we have about you.</li>
+                <li>Download a copy of your data in a machine-readable format.</li>
+                <li>Transfer your data to another service (if technically feasible).</li>
+            </ul>
+            <h4>8.2 Correction &amp; Deletion</h4>
+            <ul>
+                <li>Update any incorrect information.</li>
+                <li>Delete your account and all associated data.</li>
+                <li>Object to certain uses of your data.</li>
+            </ul>
+            <h4>8.3 How to Exercise These Rights</h4>
+            <div class="highlight-box">
+                <strong>Email:</strong> technovaphysolutions@gmail.com<br>
+                <strong>Response time:</strong> Within 14 days<br><br>
+                To make a request, tell us:
+                <ul>
+                    <li>Your email address (so we can find you).</li>
+                    <li>What you want (e.g., "I'd like a copy of my data" or "Please delete my account").</li>
+                    <li>If it's sensitive, we may ask for ID to verify you're you.</li>
+                </ul>
+            </div>
+
+            <h3>9. Children's Privacy</h3>
+            <div class="highlight-box danger">
+                <strong>TechNovaphy AI is NOT for children under 18.</strong>
+            </div>
+            <p>We require age confirmation during sign-up, and we don't knowingly collect data from minors. If we find out we have data from someone under 18, we delete it immediately.</p>
+
+            <h3>10. Cookies</h3>
+            <p>We use cookies to make things work smoothly:</p>
+            <ul>
+                <li><strong>Essential cookies</strong> – needed for login and payments.</li>
+                <li><strong>Functional cookies</strong> – remember your preferences (like language).</li>
+                <li><strong>Analytics cookies</strong> – from Google Analytics, but we anonymise them.</li>
+            </ul>
+            <p><strong>We do NOT use advertising cookies</strong> – we don't track you for ads.</p>
+            <p>You can disable cookies in your browser settings, but some features might break.</p>
+
+            <h3>11. California Privacy Rights (CCPA)</h3>
+            <p>If you're a California resident, you have these rights:</p>
+            <ul>
+                <li><strong>Know</strong> what personal data we collect, use, and share.</li>
+                <li><strong>Delete</strong> your data (with some exceptions).</li>
+                <li><strong>Opt-out</strong> of sale of data (we don't sell it anyway).</li>
+                <li><strong>Non-discrimination</strong> – we won't penalise you for exercising your rights.</li>
+            </ul>
+            <p>Email us at technovaphysolutions@gmail.com to exercise them.</p>
+
+            <h3>12. European Privacy Rights (GDPR)</h3>
+            <p>For our EU users, GDPR gives you:</p>
+            <ul>
+                <li><strong>Legal basis:</strong> Consent (when you sign up), contract performance (to deliver our service), legal obligations (tax records), and legitimate interests (fraud prevention).</li>
+                <li><strong>Your rights:</strong> Access, rectification, erasure, restriction, objection, and portability.</li>
+                <li><strong>You can complain</strong> to your local Data Protection Authority if you're not satisfied.</li>
+            </ul>
+            <p>Our Data Protection Officer can be reached at technovaphysolutions@gmail.com.</p>
+
+            <h3>13. Contact Us</h3>
+            <div class="highlight-box">
+                📧 <strong>Email:</strong> technovaphysolutions@gmail.com<br>
+                📞 <strong>Phone:</strong> +254 799 269 573<br>
+                🏢 <strong>Address:</strong> Nairobi, Kenya
+            </div>
+            <p>We aim to reply to all data subject requests within 14 days.</p>
+            <p>If you feel we've mishandled your data, you can complain to:</p>
+            <ul>
+                <li><strong>Kenya:</strong> Office of the Data Protection Commissioner</li>
+                <li><strong>EU:</strong> Your national Data Protection Authority</li>
+                <li><strong>USA:</strong> California Attorney General (for CCPA issues)</li>
+            </ul>
+
+            <h3>14. Changes to This Policy</h3>
+            <p>We may update this policy from time to time. We'll notify you about <strong>material changes</strong> by posting the new policy on our website and sending you an email. Changes take effect <strong>30 days after we post them</strong>.</p>
+
+            <h3>15. Governing Law</h3>
+            <p>This Privacy Policy is governed by the laws of Kenya. For international users, we also respect GDPR, CCPA, and other local data protection laws.</p>
+
+            <div class="footer-note">
+                <strong>Last Updated:</strong> July 1, 2026 &bull; <strong>Next Review:</strong> January 1, 2027
+            </div>
+        </div>
+
+        <!-- ============================================================ -->
+        <!-- TERMS OF SERVICE -->
+        <!-- ============================================================ -->
+        <div class="policy-section" id="terms">
+            <h2>Terms of Service</h2>
+            <p><strong>Effective Date:</strong> July 1, 2026 &bull; <strong>Last Updated:</strong> July 1, 2026</p>
+
+            <h3>1. Agreement to Terms</h3>
+            <p>By accessing and using TechNovaphy AI (the "Service"), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.</p>
+            <p><strong>These Terms apply to:</strong></p>
+            <ul>
+                <li>Website (https://dashing-marigold-aab3e2.netlify.app/)</li>
+                <li>Mobile applications</li>
+                <li>API access</li>
+                <li>All related services</li>
+            </ul>
+
+            <h3>2. Use License</h3>
+            <p>TechNovaphy Solutions grants you a limited, non-exclusive, revocable license to:</p>
+            <ul>
+                <li>Access the Service</li>
+                <li>Create an account</li>
+                <li>Use features according to your tier</li>
+                <li>Store and retrieve your data</li>
+                <li>Download reports (if applicable)</li>
+            </ul>
+            <div class="highlight-box danger">
+                <strong>You must NOT:</strong>
+                <ul>
+                    <li>❌ Reproduce, duplicate, or copy the Service</li>
+                    <li>❌ Reverse-engineer or decompile our code</li>
+                    <li>❌ Use Service for commercial purposes (except paying customers)</li>
+                    <li>❌ Harass, abuse, or harm others</li>
+                    <li>❌ Spam or flood the system</li>
+                    <li>❌ Attempt to gain unauthorized access</li>
+                    <li>❌ Use automated bots or scripts (except official API)</li>
+                    <li>❌ Resell or redistribute access</li>
+                    <li>❌ Use Service while under 18 years old</li>
+                </ul>
+            </div>
+
+            <h3>3. Account Registration</h3>
+            <h4>3.1 Eligibility</h4>
+            <ul>
+                <li>Must be <strong>18 years or older</strong></li>
+                <li>Must provide accurate information</li>
+                <li>Must maintain account security</li>
+                <li>You are responsible for all activity under your account</li>
+            </ul>
+
+            <h4>3.2 Account Responsibilities</h4>
+            <div class="highlight-box success">
+                <strong>You agree to:</strong>
+                <ul>
+                    <li>✅ Provide accurate, complete information</li>
+                    <li>✅ Keep passwords confidential and secure</li>
+                    <li>✅ Immediately notify us of unauthorized access</li>
+                    <li>✅ Accept responsibility for all account activity</li>
+                    <li>✅ Not share account credentials with others</li>
+                </ul>
+            </div>
+            <div class="highlight-box danger">
+                <strong>We are NOT liable for:</strong>
+                <ul>
+                    <li>❌ Unauthorized access due to your negligence</li>
+                    <li>❌ Loss or damage from sharing passwords</li>
+                    <li>❌ Third-party access you permit</li>
+                </ul>
+            </div>
+
+            <h4>3.3 Account Termination</h4>
+            <p><strong>We may terminate your account if you:</strong></p>
+            <ul>
+                <li>Violate these Terms</li>
+                <li>Engage in harmful activity</li>
+                <li>Use Service illegally</li>
+                <li>Harass other users</li>
+                <li>Don't pay for premium services</li>
+                <li>Request deletion</li>
+            </ul>
+            <p>You can delete your account anytime. Upon deletion:</p>
+            <ul>
+                <li>All personal data removed within 30 days</li>
+                <li>Conversation history permanently deleted</li>
+                <li>Payment records retained for 7 years (legal requirement)</li>
+            </ul>
+
+            <h3>4. Tier System &amp; Usage Limits</h3>
+            <div class="tier-grid">
+                <div class="tier-card">
+                    <div class="name">Free</div>
+                    <div class="price">$0</div>
+                    <div class="features">200 messages / month<br>20 msgs / 2.5h<br>Limited features</div>
+                </div>
+                <div class="tier-card">
+                    <div class="name">Starter</div>
+                    <div class="price">$13 <small style="font-size:0.6rem;opacity:0.6;">/mo</small></div>
+                    <div class="features">550 messages / month<br>Unlimited hourly<br>Priority support</div>
+                </div>
+                <div class="tier-card recommended">
+                    <div class="tag">⭐ Best Value</div>
+                    <div class="name">Pro</div>
+                    <div class="price">$27 <small style="font-size:0.6rem;opacity:0.6;">/mo</small></div>
+                    <div class="features">2,500 messages / month<br>Unlimited hourly<br>1-hour support</div>
+                </div>
+                <div class="tier-card">
+                    <div class="name">Enterprise</div>
+                    <div class="price">$116 <small style="font-size:0.6rem;opacity:0.6;">/mo</small></div>
+                    <div class="features">Unlimited messages<br>24/7 support<br>Team collaboration</div>
+                </div>
+            </div>
+            <p><strong>Note:</strong> Prices shown in USD for reference. Actual charges in your chosen currency (KES, USD, EUR, GBP, NGN, GHS, ZAR) will be converted based on live exchange rates.</p>
+            <ul>
+                <li>Limits reset on your billing date</li>
+                <li>Exceeding limits = account suspension until next month</li>
+                <li>Upgrade anytime to higher tier</li>
+                <li>Downgrade effective next billing cycle</li>
+                <li>Monthly charges are non-refundable</li>
+            </ul>
+
+            <h3>5. Payment &amp; Billing</h3>
+            <h4>5.1 Payment Methods</h4>
+            <p>Accepted currencies:</p>
+            <ul>
+                <li><strong>KES</strong> (Kenyan Shilling) – Paystack, M-Pesa</li>
+                <li><strong>USD</strong> (US Dollar) – Paystack, Credit Card</li>
+                <li><strong>EUR</strong> (Euro) – Paystack</li>
+                <li><strong>GBP</strong> (British Pound) – Paystack</li>
+                <li><strong>NGN</strong> (Nigerian Naira) – Paystack</li>
+                <li><strong>GHS</strong> (Ghanaian Cedi) – Paystack</li>
+                <li><strong>ZAR</strong> (South African Rand) – Paystack</li>
+            </ul>
+            <h4>5.2 Billing Cycle</h4>
+            <ul>
+                <li><strong>Monthly:</strong> Charged on same day each month</li>
+                <li><strong>Automatic Renewal:</strong> Your subscription auto-renews unless cancelled</li>
+                <li><strong>Invoice:</strong> Digital receipt sent to your email</li>
+                <li><strong>Failed Payment:</strong> Account suspended after 7 days unpaid</li>
+            </ul>
+            <h4>5.3 Refund Policy</h4>
+            <div class="highlight-box warning">
+                <strong>Refunds are NOT available because:</strong>
+                <ul>
+                    <li>Service is continuously available</li>
+                    <li>You can cancel anytime and stop charges</li>
+                    <li>No refunds for partial months</li>
+                    <li>Exception: Accidental duplicate charges (refunded within 30 days)</li>
+                </ul>
+            </div>
+
+            <h3>6. Content &amp; Intellectual Property</h3>
+            <h4>6.1 Your Content</h4>
+            <div class="highlight-box success">
+                <strong>You retain ownership of:</strong>
+                <ul>
+                    <li>Messages you send</li>
+                    <li>Files you upload</li>
+                    <li>Data you store</li>
+                </ul>
+            </div>
+            <div class="highlight-box danger">
+                <strong>We DO NOT:</strong>
+                <ul>
+                    <li>❌ Train AI models on your data</li>
+                    <li>❌ Share content with others</li>
+                    <li>❌ Use for marketing</li>
+                    <li>❌ Claim ownership</li>
+                </ul>
+            </div>
+            <h4>6.2 AI-Generated Content</h4>
+            <ul>
+                <li>Are NOT copyrighted</li>
+                <li>You can use freely</li>
+                <li>You can publish commercially</li>
+                <li>You can modify/redistribute</li>
+                <li>No attribution required</li>
+            </ul>
+            <h4>6.3 Service Content</h4>
+            <p><strong>TechNovaphy owns:</strong></p>
+            <ul>
+                <li>Website design and layout</li>
+                <li>AI models and algorithms</li>
+                <li>Logo and branding</li>
+                <li>Documentation</li>
+                <li>All code (except uploaded files)</li>
+            </ul>
+
+            <h3>7. User Conduct</h3>
+            <h4>7.1 Prohibited Behavior</h4>
+            <div class="highlight-box danger">
+                <strong>Illegal Activity:</strong>
+                <ul>
+                    <li>❌ Use for illegal purposes</li>
+                    <li>❌ Violate any laws</li>
+                    <li>❌ Commit fraud or hacking</li>
+                    <li>❌ Distribute malware</li>
+                </ul>
+                <strong>Harmful Content:</strong>
+                <ul>
+                    <li>❌ Upload viruses or malicious code</li>
+                    <li>❌ Post hate speech or discrimination</li>
+                    <li>❌ Share sexually explicit content</li>
+                    <li>❌ Threaten or harass others</li>
+                    <li>❌ Impersonate others</li>
+                </ul>
+                <strong>System Abuse:</strong>
+                <ul>
+                    <li>❌ Spam, phishing, or scams</li>
+                    <li>❌ DDoS attacks</li>
+                    <li>❌ Automated scraping</li>
+                    <li>❌ Bot abuse</li>
+                    <li>❌ Rate limit evasion</li>
+                </ul>
+            </div>
+
+            <h3>8. AI Responses &amp; Disclaimers</h3>
+            <div class="highlight-box warning">
+                <strong>TechNovaphy AI:</strong>
+                <ul>
+                    <li>Is NOT a lawyer, doctor, or professional</li>
+                    <li>Should NOT be used for medical advice</li>
+                    <li>Should NOT be used for legal advice</li>
+                    <li>May contain inaccuracies or hallucinations</li>
+                    <li>Should be verified before critical decisions</li>
+                </ul>
+            </div>
+            <div class="highlight-box danger">
+                <strong>DO NOT use for:</strong>
+                <ul>
+                    <li>Medical self-diagnosis</li>
+                    <li>Legal document creation</li>
+                    <li>Financial investment advice</li>
+                    <li>Critical business decisions</li>
+                    <li>Anything requiring professional expertise</li>
+                </ul>
+            </div>
+
+            <h3>9. Warranty Disclaimer</h3>
+            <div class="highlight-box warning">
+                <strong>SERVICE PROVIDED "AS-IS"</strong>
+                <p>We provide the Service on an "as-is" and "as-available" basis without warranties of any kind, including:</p>
+                <ul>
+                    <li>❌ Merchantability</li>
+                    <li>❌ Fitness for a particular purpose</li>
+                    <li>❌ Non-infringement</li>
+                    <li>❌ Availability</li>
+                    <li>❌ Accuracy</li>
+                    <li>❌ Security</li>
+                </ul>
+            </div>
+
+            <h3>10. Limitation of Liability</h3>
+            <div class="highlight-box danger">
+                <strong>WE ARE NOT LIABLE FOR:</strong>
+                <ul>
+                    <li>❌ Lost profits or revenue</li>
+                    <li>❌ Lost data or files</li>
+                    <li>❌ Indirect damages</li>
+                    <li>❌ Consequential damages</li>
+                    <li>❌ Special damages</li>
+                    <li>❌ Punitive damages</li>
+                </ul>
+                <p><strong>Maximum liability:</strong> Amount you paid in last 3 months OR $100, whichever is LESS.</p>
+            </div>
+
+            <h3>11. Dispute Resolution</h3>
+            <h4>11.1 Informal Resolution</h4>
+            <p>Before legal action:</p>
+            <ol>
+                <li>Email dispute to: technovaphysolutions@gmail.com</li>
+                <li>We'll respond within 14 days</li>
+                <li>Attempt good-faith resolution</li>
+                <li>Discuss mutually acceptable terms</li>
+            </ol>
+            <h4>11.2 Arbitration</h4>
+            <p>If not resolved within 30 days:</p>
+            <ul>
+                <li>Disputes resolved by <strong>arbitration</strong> (not court)</li>
+                <li>Single arbitrator</li>
+                <li>Arbitration conducted in Nairobi, Kenya</li>
+                <li>Costs split equally</li>
+                <li>Decision is binding</li>
+            </ul>
+            <h4>11.3 Governing Law</h4>
+            <p>These Terms governed by <strong>laws of Kenya</strong> without regard to conflicts of law.</p>
+
+            <h3>12. Contact Us</h3>
+            <div class="highlight-box">
+                📧 <strong>Email:</strong> technovaphysolutions@gmail.com<br>
+                📞 <strong>Phone:</strong> +254 799 269 573<br>
+                🏢 <strong>Address:</strong> Nairobi, Kenya<br>
+                🌐 <strong>Website:</strong> https://technovaphy.co.ke<br>
+                <strong>Response time:</strong> Within 5 business days
+            </div>
+
+            <h3>13. Changes to Terms</h3>
+            <p>We may update Terms anytime. <strong>Material changes</strong> require 30-day notice. Continued use = acceptance. If you disagree, delete your account.</p>
+
+            <div class="footer-note">
+                <strong>Last Updated:</strong> July 1, 2026 &bull; <strong>Effective:</strong> Immediately<br><br>
+                By using TechNovaphy AI, you accept these Terms of Service.<br>
+                If you do not agree, do not use the Service.
+            </div>
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center; border-top: 1px solid #1a1f3a; padding-top: 1.5rem;">
+            <a href="https://dashing-marigold-aab3e2.netlify.app/" class="back-link">← Back to TechNovaphy AI</a>
+        </div>
+
+        <div class="footer-note" style="margin-top: 1rem;">
+            © 2026 TechNovaphy Solutions &bull; Built with ❤️ in Nairobi
+        </div>
+    </div>
 </body>
-</html>
+    </html>
